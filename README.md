@@ -9,5 +9,6 @@
 
 ## connect to vault
 1. exec into running container
-2. `vault login` with the provided token on screen
+    - `docker exec -it vault sh`
+2. `vault login` should not be required due to env var `VAULT_DEV_ROOT_TOKEN_ID` set to `myroot`
 3. access vault gui from [localhost:1234](http://localhost:1234)
