@@ -7,4 +7,5 @@ run:
 		-e 'VAULT_ADDR=http://0.0.0.0:1234' \
 		-p 1234:1234 \
 		--name vault \
+		-v "$(PWD)"/policies:/policies:ro \
 		vault:1.11.1 vault server --dev
