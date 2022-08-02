@@ -6,3 +6,7 @@
 
 ## playground entry
 `make`
+
+## connect to vault
+1. exec into running container
+2. `vault login` with the provided token on screen
